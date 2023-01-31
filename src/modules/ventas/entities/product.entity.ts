@@ -84,7 +84,7 @@ export class ProductEntity{
     
     async setEmail(){
         if(!this.email){
-            return("No hay ni verga de correo");
+            return("No hay correo");
         }
         this.email = this.setEmail.toLowerCase().trim();
      }*/
@@ -94,7 +94,7 @@ export class ProductEntity{
 
     async hashPassword(){
         if(!this.password){
-            return("Pon bien la contraseña chcha");
+            return("Pon bien la contraseña");
     }
     this.password = await Bcrypt.hash(this.hashPassword,16)*/
 }
